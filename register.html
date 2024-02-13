@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tailwind/tailwind.min.css">
+    <link rel="stylesheet" href="fa/css/all.css">
+    <script src="js/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Register</title>
+</head>
+<body>
+    <header class="py-2 sticky top-0 bg-blue-600 z-30 ">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex justify-center item-center">
+                <div class="py-1 flex justify-center item-center">
+                    <div class=" py-1 ">
+                        
+                    </div>
+                </div>
+
+                <!-- register/login -->
+                <div class="flex-1 mt-5 ">
+            
+                </div>
+                <div class="md:px-6 px-0 md:mt-4 mt-2">
+                    <button class="bg-blue-200 md:mr-6 px-4 py-2 rounded">Register</button>
+                    <button class="bg-blue-200 mr-6 px-4 py-2 rounded">Login</button>
+
+                </div>
+                
+            </div>
+        </div>
+        
+        
+
+    </header>
+    <!-- banner -->
+    <div class=" max-w-6xl mx-auto gap-10 border-gray-200  flex">
+        <div class="flex-1 md:flex hidden justify-center item-center bg-blue-200 w-full ">
+            <div class="justify-center item-center mt-20">
+                       <img src="./image/banner_img_right.png" alt="" style="height: 500px;">
+            </div>
+        </div>
+
+        <div class="flex-1 ">
+            <div class="mt-5  ">
+                <div class="md:ml-0 ml-4 ">
+                    <span class="text-2xl font-bold  text-blue-600 block">HELLO <span class="text-blue-200"> THERE</span> !</span>
+                    <p class="mt-5">Fill the form to create an accout with us</p>
+                </div>
+
+               <div class="flex md:ml-0 ml-4 ">
+                    <div class=" bg-blue-600 w-96 px-4 mt-2 ">
+                        <div class=" mt-5">
+                            <form id="frmregister">
+                                <div class="py-5">
+                                    <label for="" class="block text-gray-500  font-semibold"></label>
+                                    <input type="text" class="bg-gray-200 appearance-non border-4 w-full border-gray-200 py-2 px-4 text-gray-700 leading-tight focus:outlne-none focus:burder-purpe-500 " id="firstname" name="firstname" placeholder="firstname">
+        
+                                </div>
+                                <div class="mb-5">
+                                    <label for="" class="block text-gray-500 font-semibold"></label>
+                                    <input type="text" class="bg-gray-200 appearance-non border-2 w-full border-gray-200 py-2 px-4 text-gray-700 leading-tight focus:outlne-none focus:burder-purpe-500 " id="lastname" name="lastname" placeholder="lastname">
+        
+                                </div>
+                                <div class="mb-5">
+                                    <label for="" class="block text-gray-500 font-semibold"></label>
+                                    <input type="email" class="bg-gray-200 appearance-non border-2 w-full border-gray-200 py-2 px-4 text-gray-700 leading-tight focus:outlne-none focus:burder-purpe-500 " id="email" name="email" placeholder="email">
+        
+                                </div>
+                                <div class="flex mb-5 ">
+                                    <input type="password" class="bg-gray-200 appearance-non border-2 w-full border-gray-200 py-2 px-4 text-gray-700 leading-tight focus:outlne-none focus:burder-purpe-500 " id="password" name="password" placeholder="password">
+                                    <div class="flex-initial px-3 flex items-center cursor-pointer bg-gray-400">
+                                        <i class="fa fa-eye" id="password_toggle"></i>
+                                    </div>
+                                </div>
+                                <div class="flex mb-5 ">
+                                    <input type="comfirmpassword" class="bg-gray-200 appearance-non border-2 w-full border-gray-200 py-2 px-4 text-gray-700 leading-tight focus:outlne-none focus:burder-purpe-500 " id="comfirmpassword" name="comfirmpassword" placeholder="comfirm password">
+                                    <div class="flex-initial px-3 flex items-center cursor-pointer bg-gray-400">
+                                        <i class="fa fa-eye-slash" id="password_toggle1"></i>
+                                    </div>
+                                </div>
+                                <div class="flex mb-5  ">
+                                    <input type="choose course" class="bg-gray-200 appearance-non border-2 w-full border-gray-200 py-2 px-4 text-gray-700 leading-tight focus:outlne-none focus:burder-purpe-500 " id="choose your course" name="choose your course" placeholder="choose your course">
+                                    <div class="flex-initial px-3 flex items-center cursor-pointer bg-gray-400">
+                                        <i class="fa fa-angle-down"  onclick="dropDown()"></i>
+                                    </div>
+                                    
+
+                                    
+                                </div>
+                                <div class="course flex-1 block hidden bg-gray-400 mb-2  cursor-pointer">
+                                    <ul class="py-2">
+                                        <li class=" px-6 block hover:text-white  ">
+                                            <a href=""><i class="text-sm"></i>UI/UX</a>
+                                        </li>
+                                        <li class=" px-6 block hover:text-white">
+                                            <a href=""><i class="text-sm"></i>Graphics</a>
+                                        </li>
+                                        <li class=" px-6 block hover:text-white ">
+                                            <a href=""><i class="text-sm"></i>webdevelopment</a>
+                                        </li>
+                                        <li class=" px-6 block hover:text-white">
+                                            <a href=""><i class="text-sm"></i>frontend</a>
+                                        </li>
+                    
+                                        <li class="px-6 block hover:text-white">
+                                            <a href=""><i class="text-sm"></i>backend</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="flex mb-5 ">
+                                    <input type="upload image" class="bg-gray-200 appearance-non border-2 w-full border-gray-200 py-2 px-4 text-gray-700 leading-tight focus:outlne-none focus:burder-purpe-500 " id="upload your image" name="upload your image" placeholder="upload your image">
+                                    <div class="flex-initial px-3 flex items-center cursor-pointer bg-gray-400">
+                                        <i class="fa fa-user" id="upload"></i>
+                                    </div>
+                                </div>
+                                <div class="text-center py-2">
+                                    <button class="px-3 py-2 text-sm  w-full bg-gray-200 hover:bg-gray-400 ">
+                                        <i class=""></i>Register
+                                    </button>
+    
+                                </div>
+
+                            </form>
+
+                        </div>
+                    
+                    </div>
+               </div>
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <script>
+        var emailInput = document.forms['frmregister']['email']; 
+        var passwordInput = document.forms['frmregister']['password'];
+        var comfirmpasswordInput = document.forms['frmregister']['comfirmpassword']
+
+        // Password Toggling
+        document.getElementById('password_toggle').addEventListener('click',function(){
+            if(passwordInput.type == "password") {
+                passwordInput.type = "text";
+                this.classList.remove('fa-eye');
+                this.classList.add('fa-eye-slash');
+            } else { 
+                passwordInput.type = "password";
+                this.classList.remove('fa-eye-slash');
+                this.classList.add('fa-eye');
+
+            }
+        });
+
+
+        // // Password Bar
+        // document.getElementById('password_bar').addEventListener('click',function(){
+        //     if(passwordInput.type == "comfirmpassword") {
+        //         passwordInput.type = "text";
+        //         this.classList.remove('fa-eye');
+        //         this.classList.add('fa-eye-slash');
+        //     } else { 
+        //         passwordInput.type = "comfirmpassword";
+        //         this.classList.remove('fa-eye-slash');
+        //         this.classList.add('fa-eye');
+
+        //     }
+        // });
+        document.getElementById('password_toggle1').addEventListener('click',function(){
+            if(passwordInput.type == "password") {
+                passwordInput.type = "text";
+                this.classList.remove('fa-eye');
+                this.classList.add('fa-eye-slash');
+            } else { 
+                passwordInput.type = "password";
+                this.classList.remove('fa-eye-slash');
+                this.classList.add('fa-eye');
+
+            }
+        });
+
+        // function dropDown(){
+        //     document.querySelector("").classList.toggle("hiddem")
+        // }
+
+        
+        function dropDown(){
+            document.querySelector(".course").classList.toggle("hidden");
+     }
+
+
+        
+
+    </script>
+
+    <script src="js/script.js"></script>
+    
+    
+    
+</body>
+</html> 

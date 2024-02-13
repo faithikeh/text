@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tailwind/tailwind.min.css">
+    <link rel="stylesheet" href="fa/css/all.css">
+    <script src="js/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>login</title>
+</head>
+<body>
+    <header class="py-2 sticky top-0 bg-blue-600 z-30 ">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex justify-center item-center">
+                <div class="py-1 flex justify-center item-center">
+                    <div class=" py-1 ">
+                        
+                    </div>
+                </div>
+
+                <!-- register/login -->
+                <div class="flex-1 mt-5 ">
+            
+                </div>
+                <div class="md:px-6 px-0 md:mt-4 mt-2">
+                    <a href="register.html" class="bg-blue-200 md:mr-6 px-4 py-2 rounded">REGISTER</a>
+                    <a href="index.html" class="bg-blue-200 mr-6 px-4 py-2 rounded">HOME</a>
+
+                </div>
+            </div>
+        </div>
+        
+        
+
+    </header>
+    <!-- banner -->
+    <div class=" max-w-6xl mx-auto gap-10 border-gray-200  flex">
+        <div class="flex-1 md:flex hidden justify-center item-center bg-blue-200 md:w-full w-screen ">
+            <div class="justify-center item-center mt-20">
+                       <img src="./image/banner_img_left.png" alt="" style="height: 500px;">
+            </div>
+        </div>
+
+        <div class="flex-1 ">
+            <div class="mt-5  ">
+                <div class="md:ml-0 ml-4 ">
+                    <span class="text-2xl font-bold  text-blue-600 block">WELCOME <span class="text-blue-200"> BACK</span> !</span>
+                    <p class="mt-5 mb-4">Good to have you back </p>
+                </div>
+
+               <div class="flex md:ml-0 ml-4 rounded ">
+                    <div class=" bg-blue-600 w-96 px-4 mt-2 ">
+                        <div class=" mt-5">
+                            <form id="frmlogin">
+
+                                <div class="mb-5">
+                                    <label for="" class="block text-gray-500 font-semibold"></label>
+                                    <input type="text" class="bg-gray-200 appearance-non border-2 w-full border-gray-200 py-2 px-4 text-gray-700 leading-tight focus:outlne-none focus:burder-purpe-500 " id="email" name="email" placeholder="email">
+        
+                                </div>
+                                <div class="flex mb-5 ">
+                                    <input type="password" class="bg-gray-200 appearance-non border-2 w-full border-gray-200 py-2 px-4 text-gray-700 leading-tight focus:outlne-none focus:burder-purpe-500 " id="password" name="password" placeholder="password">
+                                    <div class="flex-initial px-3 flex items-center cursor-pointer bg-gray-400">
+                                        <i class="fa fa-eye" id="password_toggle"></i>
+                                    </div>
+                                </div>
+                                
+                                
+                                <div class="text-center py-2">
+                                    <button class="px-3 py-2 text-sm font-semibold w-full bg-gray-200 hover:bg-gray-400 ">
+                                        <i class=""></i>Log In
+                                    </button>
+    
+                                </div>
+
+                                <!-- <div>
+                                    <span id="password_error_display"></span>
+                                </div> -->
+                                <div class="mb-4">
+                                    <input type="checkbox" id="remember">
+                                    <label for="remember" class="ml-1">
+                                        Remember Me
+                                    </label>
+                                </div>
+                                
+                                <div class="mb-4 text-center">
+                                    <a href="register.html" class="hover:underline">Don't have an account? Click to Register</a>
+                                </div>
+                                <!-- <div class="my-4">
+                                    <span class="text-red-500" id="error_display"></span>
+                                </div> -->
+                            </form>
+
+                        </div>
+                    
+                    </div>
+               </div>
+            </div>
+            
+        </div>
+        
+    </div>
+    <script>
+        var emailInput = document.forms['frmlogin']['email']; 
+        var passwordInput = document.forms['frmlogin']['password'];
+
+        // Password Toggling
+        document.getElementById('password_toggle').addEventListener('click',function(){
+            if(passwordInput.type == "password") {
+                passwordInput.type = "text";
+                this.classList.remove('fa-eye');
+                this.classList.add('fa-eye-slash');
+            } else { 
+                passwordInput.type = "password";
+                this.classList.remove('fa-eye-slash');
+                this.classList.add('fa-eye');
+
+            }
+        });
+
+        function asdf(params) {
+            this
+        }
+        
+
+    </script>
+    <script src="js/script.js"></script>
+    
+</body>
+</html>

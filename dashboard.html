@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tailwind/tailwind.min.css">
+    <link rel="stylesheet" href="fa/css/all.css">
+    <script src="js/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>dashboard</title>
+</head>
+<body>
+    <div class="">
+        <div>
+            <div class="min-h-screen w-full flex justify-center item-center" style="background-image: url(./image/bg.jpg);">
+                <div class="max-w-[500px] md:w-4/12 w-full bg-white ">
+                    <div class="flex-1 py-1 flex shadow-lg md:shadow-none bg-blue-600 ">
+                        
+                        <div class="flex-1 flex py-1 justify-center item-center" >
+                            <div class="flex-1"><h1 class="text-2xl font-semibold  px-2"> Dashboard</div>    
+                        </div>
+                        <div class="flex-initial px-2 mt-2 cursor-pointer" >
+                            <i class="fa fa-bars" onclick="dropDown()"></i>
+                        </div>
+                        
+
+                    </div>
+                    <!-- menu-bars -->
+                    <div class="ml-20">
+                        <div class=" menu_bar block hover:text-blue-900 hidden ml-20 cursor-pointer">
+                            <ul class="py-2 ml-20">
+                                <li class=" ml-20 block ">
+                                    <a href=""><i class="text-sm"></i>HOME</a>
+                                </li>
+                                <li class=" ml-20 block">
+                                    <a href=""><i class="text-sm"></i>ABOUT</a>
+                                </li>
+            
+                                <li class=" ml-20 block">
+                                    <a href=""><i class="text-sm"></i>CONTACT US</a>
+                                </li>
+                                <li class="block rounded ml-20  text-red-600 hover:bg-gray-200">
+                                    <a href=""><i class="text-sm"></i>LOG OUT</a>
+                                </li>
+                            </ul>
+        
+                        </div>
+                    </div>
+                    <!-- image-bar -->
+                    <div class="h-26 item-center justify-center bg-blue-600 w-26 rounded-full">
+                        <div class="h-52 bg-white flex items-center px-2 justify-items-center " >
+                            <div class=" flex justify-center items-center ml-10">
+                                <div class="flex justify-center h-52 w-52 border-2 rounded-full border-gray-400 mt-20 item-center ml-20 ">
+                                    <img src="./image/user1.jpg" alt="" class="max-w-full rounded-full justify-center item-center max-h-full">
+                                    
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+
+                    <div class="mt-10 py-2 text-center cursor-pointer justify-center">
+                        <h1>Sunshine111</h1>
+                        <h3>sunshine@gmail111.com</h3>
+                    </div>
+
+                    <div class="">
+                        <div class="flex flex-1 gap-8 mt-4 px-4 ">
+
+                            <div class="flex-1 h-32 rounded bg-blue-600 ">
+                                <div class=" flex w-10 h-10 mt-10 ml-16 cursor-pointer justify-center items-center bg-white border-2 rounded-full">
+                                    <i class="fa fa-book"></i>
+                                </div>
+                                <div class="item-center justify-center py-2 ml-10">
+                                    View Courses
+                                </div>
+
+                            </div>
+                            <div class="flex-1 h-32 rounded bg-blue-600 ">
+                                <div class=" flex w-10 h-10 mt-10 ml-16 cursor-pointer justify-center items-center bg-white border-2 rounded-full">
+                                    <i class="fa fa-book"></i>
+                                </div>
+                                <div class="item-center justify-center py-2 ml-14">
+                                    Attendance
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="flex flex-1 gap-8 mt-4 px-4 ">
+
+                            <div class="flex-1 h-32 rounded bg-blue-600 ">
+                                <div class=" flex w-10 h-10 mt-10 ml-16 cursor-pointer justify-center items-center bg-white border-2 rounded-full">
+                                    <i class="fa fa-university"></i>
+                                </div>
+                                <div class="item-center justify-center py-2 ml-14">
+                                    Assignment
+                                </div>
+
+                            </div>
+                            <div class="flex-1 h-32 rounded bg-blue-600 ">
+                                <div class=" flex w-10 h-10 mt-10 ml-16 cursor-pointer justify-center items-center bg-white border-2 rounded-full">
+                                    <i class="fa fa-user"></i>
+                                </div>
+                                <div class="item-center justify-center py-2 ml-14">
+                                    ResultS
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        
+
+
+    </div>
+
+    <script>
+        function dropDown(){
+            document.querySelector(".menu_bar").classList.toggle("hidden");
+        }
+
+    </script>
+
+
+
+      
+    <script src="js/script.js"></script> 
+    
+            
+
+    
+        
+    
+</body>
+</html>
